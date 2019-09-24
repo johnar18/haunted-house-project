@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html onload="checkVars();">
+	<head> <!-- header-->
+		<title>Piano Room: Ambrose Manor</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/layout.css">  
+		<meta name="description" content="The Case of the Ambrose Murder: Piano Room">
+		<meta name="author" content="Adrian, Adrienne, Johna, Linh">
+	</head>
+	
+	<body> <!-- body -->
+	<div id="wrap">
+	
+	 <audio autoplay loop> 
+        <source src="music/room_noise.wav" type="audio/wav">
+    </audio>
+	
+		<audio onloadeddata="var audioPlayer = this; setTimeout(function() { audioPlayer.play(); }, 3000)">
+		<source src="music/old_piano_rolls.wav">
+	</audio>
+		
+		<div id="scroll">
+			<img src="scenes/piano.jpg" alt="the Ambrose Manor Library" >
+		</div>
+		<a href="after_piano.html"><img class="back" src="buttons/back_arrow.png" alt="Back to previous scene"/></a>
+		<div class="textbox">
+			<p class="typewriter">Okay, that's kind of creepy, but I don't think there's anything here.</p>
+		</div>
+		
+		<!--    end of textbox div-->
+		
+		<div id="map">
+			<img src="maps/piano_room_map.png" alt="Piano room indicated on map">
+		</div>
+<!--end of map div-->
+
+    <div id="notes">
+    <img src="items/clue1_sticky_note.png" alt="Clue 1: Poison">
+        <img src="items/clue2_sticky_note.png" alt="Clue 2: New Suspect">
+        <img src="items/clue3_sticky_note.png" alt="Clue 3: Homicide">
+    </div>
+<!--end of notes div-->
+
+	</div>
+	<!--end of wrap div-->
+    
+	<div id="backpack">
+		<img src="items/blacklight.png" alt="a blacklight" title="A light that shines ultraviolet or infrared radiation, exposing elements invisible to the eye"> 
+		<img src="items/camera.png" alt="a camera" title="Used to take pictures of crime scenes">
+		<img src="items/recorder.png" alt="a recorder" title="A recorder that records sounds of ghosts and translates the noises into English words to comprehend">
+        <img src="items/poison.png" alt="bottle of poison" title="Atropa Belladonna - deadly nightshade">
+    </div> 
+<!--end of backpack div-->
+
+	</body>
+
+</html>
